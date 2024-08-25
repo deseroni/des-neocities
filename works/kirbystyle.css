@@ -1,0 +1,185 @@
+/* You expected a meaningful comment, but there is nothing. LMAO. */
+/* 	border: 1px solid #e01627; */
+/* #C71585 is MediumVioletRed */
+/*background-color: #a8e3d3;*/
+
+/* table td:first-child { 
+	border-left: none; 
+}
+	border-left: 1px solid #000; */
+
+
+h1, h2, h3, h4 {
+	font-family: Mochiy Pop One;
+}
+
+hr {
+	border: 2px dashed #989e9a;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.indent {
+	text-indent: 8%;
+}
+
+body {
+	max-width: 75%;
+	margin: 30px auto;
+    background-color: #ffcbb5;
+    color: #4D3A3C;
+}
+
+header {
+	height: 90px;
+	font-family: Mochiy Pop One;
+	font-size: 24px;
+	padding: 10px;
+	background-color: #dedede;
+	margin: 12px;
+}
+
+footer {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	font-size: 90%;
+}
+
+.container {
+	margin: 0 auto;
+	width: auto;
+	padding: 5px;
+	min-height: 520px;
+	text-align: left;
+	background-color: #dedede;
+	font-family: Capriola;
+	border: 3px solid #989e9a;
+}
+
+.mainBox {
+	margin: 20px 15px 20px 220px;
+	padding: 16px;
+	background-color: #dedede;
+	text-align: left;
+	font-size: 95%;
+	word-spacing: 2px;
+	line-height: 24px;
+}
+
+.mainBox ul {
+	list-style: square;
+}
+
+.navBox {
+	position: absolute;
+	margin: 9px 13px;
+	padding: 15px;
+	background-color: #ededed;
+	border-radius: 3px;
+}
+
+.navBoxDivider {
+	font-family: Mochiy Pop One;
+	font-weight: bold;
+	font-size: 90%;
+	text-decoration: underline;
+}
+
+.navBox li {
+  list-style: none;
+}
+
+.navBox li a {
+	width: 150px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	padding: 6px;
+	margin: auto auto 10px; auto;
+	border-radius: 2px;
+	color: #ededed;
+	background-color: #ff6658;
+}
+
+.otherBox {
+	padding: 16px;
+	width: 70%;
+	background-color: #ededed;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.pageChr table td {
+	table-layout: fixed;
+	width: 40%;
+	padding: 6px;
+}
+
+.pageGallery img {
+	width: 90%;
+	height: auto;
+	border: 1px solid #989e9a;
+}
+
+.pageGallery table td {
+	width: 27%;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 85%;
+	font-family: Mochiy Pop One;
+}
+
+/* Link reaction */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ed616c;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+a:hover, active {
+    text-decoration: underline;
+	
+}
+
+.pageGallery img:hover {
+	opacity: 0.8;
+}
+	
+
+.navBox li a:hover {
+	background-color: #ed616c;
+}
+/* Responsive design elements for altering how the elements stack when viewed on smaller devices */
+/* need to do something about widening the container at this point */
+
+@media screen and (max-width: 800px) {
+		width: 100%;
+}
+
+@media (orientation: portrait) {
+	.navBox {
+		position: static;
+		margin: 12px;
+		padding: 15px;
+    }
+	.mainBox {
+		margin: 12px 12px 0px;
+    }
+	
+	.pageGallery table td {
+	width: 20%;
+	overflow: hidden;
+	}
+}
