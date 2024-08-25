@@ -1,0 +1,244 @@
+/* 12/18/2022 */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 63rem;
+	margin: 1.8rem auto;
+    background-color: #fbb994;
+    color: #4D3A3C;
+	border: 1px solid #4D3A3C;	
+}
+
+section {
+	width: auto;
+	padding: 10px 30px;
+	min-height: 310px;
+	background-color: #FAF4ED;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	font-family: Assistant;
+}
+
+section a {
+	color: #00A893;
+}
+
+.smallbox {
+	max-width: 44rem;
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fb795d;
+	border-top: 1px solid #4D3A3C;
+}
+
+nav a {
+	font-weight: bold;
+	color: #FFFFFF;
+	target: _self;
+}
+
+nav li {
+	display: inline-block;
+    padding: 12px 20px;
+	font-family: Capriola;
+}
+
+header img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+	text-align: center;
+	padding: 6px;
+	font-size: 0.9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Capriola;
+}
+
+hr {
+	border: 2px dashed #F99766;
+}
+
+.simplehr {
+	border: 1px solid #918f86;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+mark {
+	background-color: #fad737;
+	color: #4D3A3C;
+}
+
+dd {
+	font-size: 1.1rem;
+}
+
+.indent {
+	text-indent: 2rem;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.small-header {
+    font-size: 1.15rem;
+}
+
+figure {
+	max-width: 200px;
+	background-color: #FFF;
+	border: 1px solid #918f86;
+	padding: 6px;
+}
+
+figcaption {
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+/* Library/etc cards */
+
+.card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+	gap: 0.8rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #918f86;
+	background-color: #FFFFFF;
+    flex: 0 1 30%;
+    /* This means in your media query for different screen sizes, 
+    the .card "flex" category is the only thing that you *need* to change*/
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.12rem;
+}
+
+.card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 10px;
+	margin-bottom: 0;
+    border: 1px solid #918f86;
+}
+
+/* CHARACTER Cards */
+
+.character-gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 0.8rem;
+}
+
+.character {
+	display: column;
+	width: 132px;
+	max-height: 200px;
+	text-align: center;
+}
+
+.character img {
+	max-width: 130px;
+    object-fit: cover;
+	border: 1px solid #918f86;
+}
+
+/* Table replacement */
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+}
+
+.content-img {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  border-right: 1px solid #918f86;
+}
+
+.content img {
+	max-width: 300px;
+	max-height: 550px;
+}
+
+.content-text {
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 10px;
+}
+
+/* Link reaction */
+
+a:link {
+    text-decoration: none;
+}
+
+li a:hover, a:hover, a:active {
+    text-decoration: underline;
+}
+
+.works-card img:hover {
+	opacity: 0.8;
+}
+
+nav li:hover {
+	background-color: #e56646;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    height: auto;
+    overflow: auto;
+  }
+		
+   .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .content-text {
+    overflow: visible;
+    max-height: fit-content;
+  }
+
+  .content-img {
+    width: 100%;
+    border-right: none;
+	border-bottom: 1px solid #918f86;
+  }
+}
